@@ -1,0 +1,149 @@
+
+body {
+    background-color: ghostwhite;
+    font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+a, a:focus, a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+i{
+    margin: 5px;
+}
+
+p{
+    display: inline;
+}
+footer{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.portfolio {
+    background-color: lightyellow;
+    box-shadow: 5px 5px #5f5f5f;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    position: relative;
+    border-style: solid double double solid;
+    width: 100%;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+}
+
+.profile-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url("https://raw.githubusercontent.com/Auguryy/Auguryy/main/Minions.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left: -75px;
+    top: -75px;
+}
+
+.name{
+    flex-grow: 1;
+}
+
+.small-size-icon{
+    font-size: 24px;
+}
+
+.exp, .published, .education{
+    margin: 15px;
+    border-bottom: 1px solid #000000;
+}
+
+.collapsible, .resume {
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 0px 15px 5px;
+    text-align: left;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid #000000;
+    font-size: 20px;
+    font-family: "JetBrains Mono";
+    font-weight: bold;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #6b6b521f;
+    border-radius: 5px;
+  }
+
+  li{
+    list-style: square;
+  }
+
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  /* Media query for screens 992px and smaller (tablets) */
+@media (max-width: 992px) {
+    body {
+        margin: 40px; /* Adjust margin for smaller screens */
+    }
+    
+    .profile-img {
+        position: static;
+        margin-bottom: 20px;
+    }
+    
+    .name {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+    
+    .small-size-icon {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Media query for screens 768px and smaller (phones) */
+@media (max-width: 768px) {
+    body {
+        margin: 20px; /* Adjust margin for smaller screens */
+    }
+    
+    .profile-img {
+        position: static;
+        margin-bottom: 20px;
+    }
+    
+    .profile-img {
+        width: 80px; /* Adjust image size for smaller screens */
+        height: 80px; /* Adjust image size for smaller screens */
+    }
+    
+    .name {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    
+    .small-size-icon {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
