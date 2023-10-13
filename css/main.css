@@ -103,7 +103,8 @@ footer{
   /* Media query for screens 992px and smaller (tablets) */
 @media (max-width: 992px) {
     body {
-        margin: 40px; /* Adjust margin for smaller screens */
+        margin: 40px;  /* Adjust margin for smaller screens */
+        height: auto;
     }
     
     .profile-img {
@@ -127,6 +128,7 @@ footer{
 @media (max-width: 768px) {
     body {
         margin: 20px; /* Adjust margin for smaller screens */
+        height: auto;
     }
     
     .profile-img {
